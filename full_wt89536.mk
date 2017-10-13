@@ -22,9 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/yu/wt89536/device.mk)
 
 # Device identifier. This must come after all inclusions
-TARGET_VENDOR := yu
+TARGET_VENDOR := YU
 PRODUCT_DEVICE := wt89536
 PRODUCT_NAME := full_wt89536
-PRODUCT_BRAND := yu
+PRODUCT_BRAND := YU
 PRODUCT_MODEL := YU5551
-PRODUCT_MANUFACTURER := yu
+PRODUCT_MANUFACTURER := YU
