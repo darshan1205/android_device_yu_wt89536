@@ -17,7 +17,7 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "Xiaomi Redmi Note 4"
+#define BTM_DEF_LOCAL_NAME   "YU YUREKA2"
 
 #define BLE_VND_INCLUDED TRUE
 #define BTA_DISABLE_DELAY 1000 /* in milliseconds */
