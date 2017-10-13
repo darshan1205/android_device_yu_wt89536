@@ -90,7 +90,6 @@
     <ctl name="SpkrMono BOOST Switch" value="1" />
     <ctl name="EAR PA Gain" value="POS_1P5_DB" />
     <ctl name="EAR PA Boost" value="ENABLE" />
-    <ctl name="Speaker Boost" value="DISABLE" />
     <ctl name="MI2S_RX Channels" value="One" />
     <ctl name="MI2S_TX Channels" value="One" />
     <ctl name="PRI_MI2S_RX_DL_HL Switch" value="0" />

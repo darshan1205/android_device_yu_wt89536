@@ -27,7 +27,7 @@
     <ctl name="COMP0 RX2" value="0" />
     <ctl name="RX1 Digital Volume" value="84" />
     <ctl name="RX2 Digital Volume" value="84" />
-    <ctl name="RX3 Digital Volume" value="78" />
+    <ctl name="RX3 Digital Volume" value="84" />
     <ctl name="IIR1 INP1 Volume" value="84" />
     <ctl name="IIR1 INP2 Volume" value="84" />
     <ctl name="IIR1 INP3 Volume" value="84" />
@@ -61,7 +61,6 @@
     <ctl name="EAR PA Gain" value="POS_6_DB" />
     <ctl name="EAR PA Gain" value="POS_1P5_DB" />
     <ctl name="EAR PA Boost" value="ENABLE" />
-    <ctl name="Speaker Boost" value="DISABLE" />
     <ctl name="MI2S_RX Channels" value="One" />
     <ctl name="MI2S_TX Channels" value="One" />
     <ctl name="PRI_MI2S_RX_DL_HL Switch" value="0" />
@@ -833,7 +832,7 @@
 
     <path name="wsa-speaker">
         <ctl name="RX3 MIX1 INP1" value="RX1" />
-        <ctl name="RX3 Digital Volume" value="78" />
+        <ctl name="RX3 Digital Volume" value="84" />
         <ctl name="LINE_OUT" value="Switch" />
         <ctl name="SpkrMono WSA_RDAC" value="Switch" />
    </path>
