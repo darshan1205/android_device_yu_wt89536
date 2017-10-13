@@ -77,13 +77,13 @@ static bool ensure_vendor_module_is_loaded(void)
 
     int rv;
     char vend [PROPERTY_VALUE_MAX];
-    property_get("sys.fp.vendor", vend, NULL);
+    property_get("persist.sys.fp.vendor", vend, NULL);
 
 
 	if (!strcmp(vend, "goodix")) {
 	    rv = load("/system/lib64/hw/fingerprint.goodix.so", &vendor.hw_module);
 	} else {
-            rv = load("/system/lib64/hw/fingerprint.searchf.so", &vendor.hw_module);
+            rv = load("/system/lib64/hw/fingerprint.default.so", &vendor.hw_module);
 	}
         if (rv) {
             ALOGE("failed to open vendor module, error %d", rv);
