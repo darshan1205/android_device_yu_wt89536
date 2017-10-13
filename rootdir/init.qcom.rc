@@ -1014,18 +1014,20 @@ service gx_fpd /system/bin/gx_fpd
      user root
      group system system
 
-on property:sys.fp.vendor=switchf
+on property:persist.sys.fp.vendor=switchf
     stop gx_fpd
-    setprop sys.fp.vendor searchf
+    setprop persist.sys.fp.vendor searchf
     start fingerprintd
-    setprop fpc.fp.miui.token 0
     setprop ro.boot.fpsensor fpc
+    setprop persist.sys.fp.goodix 0
 
-on property:sys.fp.onstart=1
+on property:persist.sys.fp.onstart=1
    start fingerprintd
-   setprop goodix.fp.miui.analyse 1
-   setprop goodix.fp.miui.token 0
    setprop ro.boot.fpsensor gdx
+   setprop persist.sys.fp.goodix 1
+
+on property:ro.boot.fpsensor=gdx
+    setprop ro.hardware.fingerprint goodix
 
 service displayfeature /system/bin/displayfeature
     class main
