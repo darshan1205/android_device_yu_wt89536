@@ -18,8 +18,8 @@
 set -e
 
 # Required!
-DEVICE=mido
-VENDOR=xiaomi
+DEVICE=wt89536
+VENDOR=yu
 
 # Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

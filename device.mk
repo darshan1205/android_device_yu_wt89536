@@ -18,7 +18,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 $(call inherit-product, frameworks/native/build/phone-xxxhdpi-4096-hwui-memory.mk)
 
-$(call inherit-product, vendor/xiaomi/mido/mido-vendor.mk)
+$(call inherit-product, vendor/yu/wt89536/wt89536-vendor.mk)
 
 
 # Overlays

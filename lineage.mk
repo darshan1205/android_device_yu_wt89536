@@ -14,16 +14,16 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/xiaomi/mido/full_mido.mk)
+$(call inherit-product, device/yu/wt89536/full_wt89536.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_mido
-BOARD_VENDOR := Xiaomi
+PRODUCT_NAME := lineage_wt89536
+BOARD_VENDOR := yu
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_GMS_CLIENTID_BASE := android-yu
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT="xiaomi/mido/mido:6.0.1/MMB29M/V8.1.11.0.MCFMIDI:user/release-keys" \
-    PRIVATE_BUILD_DESC="mido-user 6.0.1 MMB29M V8.1.11.0.MCFMIDI release-keys"
+    BUILD_FINGERPRINT="yu/wt89536/wt89536:6.0.1/MMB29M/V8.1.11.0.MCFMIDI:user/release-keys" \
+    PRIVATE_BUILD_DESC="wt89536-user 6.0.1 MMB29M V8.1.11.0.MCFMIDI release-keys"

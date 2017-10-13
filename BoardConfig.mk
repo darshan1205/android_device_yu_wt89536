@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/xiaomi/mido
+LOCAL_PATH := device/yu/wt89536
 
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
@@ -44,8 +44,8 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
-TARGET_KERNEL_CONFIG := lineageos_mido_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
+TARGET_KERNEL_CONFIG := lineageos_wt89536_defconfig
+TARGET_KERNEL_SOURCE := kernel/yu/msm8953
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/kernel
 
 # ANT
@@ -137,9 +137,9 @@ USE_DEVICE_SPECIFIC_GPS := true
 TARGET_NO_RPC := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_mido
+TARGET_INIT_VENDOR_LIB := libinit_wt89536
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
-TARGET_RECOVERY_DEVICE_MODULES := libinit_mido
+TARGET_RECOVERY_DEVICE_MODULES := libinit_wt89536
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
@@ -197,4 +197,4 @@ WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/wlan.ko"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
--include vendor/xiaomi/mido/BoardConfigVendor.mk
+-include vendor/yu/wt89536/BoardConfigVendor.mk

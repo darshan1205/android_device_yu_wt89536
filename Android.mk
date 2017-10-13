@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter mido,$(TARGET_DEVICE)),)
+ifneq ($(filter wt89536,$(TARGET_DEVICE)),)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
@@ -89,6 +89,6 @@ $(FPC_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(FPC_SYMLINKS)
 
-include device/xiaomi/mido/tftp.mk
+include device/yu/wt89536/tftp.mk
 
 endif
